@@ -7,9 +7,41 @@ font-family: Arial, sans-serif;
 overflow: hidden;
 }
 
-h1 {
+/* Fond vidéo */
+#bgVideo {
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+object-fit: cover;
+}
+
+/* Conteneur texte et liens */
+.overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 color: #00ffff;
 text-align: center;
-margin-top: 50px;
+}
+
+.overlay h1 {
+font-size: 3em;
 text-shadow: 2px 2px 10px #000;
+}
+
+/* Liens réseaux */
+.socials a {
+color: #00ffff;
+margin: 0 15px;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.socials a:hover {
+color: #ffffff;
 }

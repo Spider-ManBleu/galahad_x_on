@@ -36,32 +36,19 @@ z-index: 2;
 
 /* Logo */
 #intro .logo {
-width: 250px; /* plus grand */
+position: relative; /* au-dessus de l'image Spider-Man */
+width: 250px;
 margin-bottom: 20px;
-z-index: 2; /* au-dessus des toiles */
+z-index: 2;
 }
 
-/* Toiles d'araignée */
-.spider-web {
+/* Image Spider-Man avec sa toile */
+.spiderman-web {
 position: absolute;
-width: 150px;
-height: 150px;
-background: transparent;
-border: 1px solid rgba(255,255,255,0.6);
-border-radius: 50%;
-z-index: 1;
-transform: rotate(45deg);
-}
-
-/* Position des toiles */
-.web-left {
-top: 25%;
-left: 5%;
-}
-
-.web-right {
-top: 25%;
-right: 5%;
+bottom: 0;
+right: 0;
+width: 300px; /* ajustable selon ton image */
+z-index: 1; /* derrière le logo et le texte */
 }
 
 /* Section Trailer */

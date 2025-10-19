@@ -43,12 +43,22 @@ z-index: 2;
 }
 
 /* Image Spider-Man avec sa toile */
+@keyframes swing {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(5deg); }
+50% { transform: rotate(0deg); }
+75% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
 .spiderman-web {
 position: absolute;
 bottom: 0;
-right: 100px; /* décale vers la gauche */
+right: 105px; /* ajusté légèrement vers la gauche */
 width: 300px;
 z-index: 1;
+transform-origin: bottom right; /* accroche sur la toile */
+animation: swing 3s infinite ease-in-out; /* balancement continu */
 }
 
 /* Section Trailer */

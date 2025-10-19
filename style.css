@@ -1,47 +1,73 @@
-/* Style de base */
+/* Styles généraux */
 body, html {
 margin: 0;
 padding: 0;
-height: 100%;
-font-family: Arial, sans-serif;
-overflow: hidden;
-}
-
-/* Fond vidéo */
-#bgVideo {
-position: fixed;
-top: 0;
-left: 0;
-min-width: 100%;
-min-height: 100%;
-z-index: -1;
-object-fit: cover;
-}
-
-/* Conteneur texte et liens */
-.overlay {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+font-family: 'Arial', sans-serif;
+background-color: #000;
 color: #00ffff;
-text-align: center;
 }
 
-.overlay h1 {
-font-size: 3em;
+/* Section Intro */
+#intro {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #000;
+}
+
+#intro h1 {
+font-size: 2.5em;
+margin: 20px 0 10px 0;
 text-shadow: 2px 2px 10px #000;
 }
 
-/* Liens réseaux */
-.socials a {
+#intro p {
+font-size: 1.2em;
+text-shadow: 1px 1px 5px #000;
+}
+
+/* Logo */
+.logo {
+width: 150px;
+margin-bottom: 20px;
+}
+
+/* Section Trailer */
+#trailer {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 20px;
+background-color: #000;
+}
+
+#trailer video {
+max-width: 90%;
+height: auto;
+border: 2px solid #00ffff;
+box-shadow: 0 0 20px #00ffff;
+}
+
+/* Section Réseaux sociaux */
+#socials {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 0;
+background-color: #111;
+}
+
+#socials a {
 color: #00ffff;
 margin: 0 15px;
 text-decoration: none;
-font-weight: bold;
-font-size: 1.2em;
+font-size: 1.5em;
 }
 
-.socials a:hover {
+#socials a:hover {
 color: #ffffff;
+text-shadow: 0 0 5px #00ffff;
 }
